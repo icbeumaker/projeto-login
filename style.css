@@ -10,15 +10,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.2s all;
 }
-/* .container {
-  
-} */
+
 #login-form {
   background-color: blue;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   width: 300px;
   min-height: 300px;
@@ -26,12 +24,69 @@ body {
   background-color: #ddd;
   padding: 10px;
   border-radius: 10px;
+  position: relative;
 }
 #login-form * {
-  width: 100%;
   padding: 10px;
   outline: none;
 }
 h1 {
   text-align: center;
+}
+button,
+#usuario,
+#senha {
+  width: 100%;
+}
+#mensagem {
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  display: none;
+  transition: 0.2s all;
+}
+.sucesso {
+  background-color: green;
+  display: flex !important;
+}
+.erro {
+  background-color: red;
+  display: flex !important;
+}
+.mostrar-senha {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0 !important;
+  gap: 5px;
+  padding: 0px 0px 0px 5px !important;
+  user-select: none;
+}
+#mostrar-senha {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+.mostrar-senha label {
+  cursor: pointer;
+}
+/* MODO ESCURO */
+body.dark {
+  background-color: #181818;
+}
+#login-form.dark {
+  background-color: rgb(41, 41, 41);
+  color: #fff;
+}
+#dark-mode{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+#dark-mode:hover{
+  transform: scale(1.2);
 }

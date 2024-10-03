@@ -9,11 +9,17 @@
   <body>
     <div class="container">
       <form id="login-form">
+        <span id="dark-mode">🌙</span>
         <h1>Login</h1>
-
+        <span id="mensagem"> </span>
         <input placeholder="Usuário" type="text" id="usuario" required />
 
         <input placeholder="Senha" type="password" id="senha" required />
+
+        <div class="mostrar-senha">
+          <input type="checkbox" id="mostrar-senha" />
+          <label for="mostrar-senha">Mostrar senha</label>
+        </div>
 
         <button>Acessar</button>
       </form>
